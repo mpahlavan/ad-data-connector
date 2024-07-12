@@ -11,8 +11,10 @@ This project provides a connector for fetching advertising data from the Sultek 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/funnel-connector.git
+    git clone https://github.com/mpahlavan/funnel-connector.git
     cd funnel-connector
+    python -m venv venv
+    source venv/bin/activate 
     ```
 
 2. Install the required packages:
