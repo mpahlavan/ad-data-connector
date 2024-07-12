@@ -42,15 +42,19 @@ This project provides a connector for fetching advertising data from the Sultek 
 - **URL:** `/api/accounts`
 - **Method:** `GET`
 - **Headers:**
-  - `Authorization: bb6d467a123`
+  - `Authorization: **********`
 - **Response:**
     ```json
-    [
-        {
-            "accountName": "Account Name",
-            "accountId": "Account Id"
-        }
-    ]
+  [
+    {
+        "accountId": "4**********`",
+        "accountName": "Account1"
+    },
+    {
+        "accountId": "e**********`",
+        "accountName": "Account2"
+    }
+]
     ```
 
 #### Fetch Advertising Data
@@ -58,7 +62,7 @@ This project provides a connector for fetching advertising data from the Sultek 
 - **URL:** `/api/adData`
 - **Method:** `GET`
 - **Headers:**
-  - `Authorization: bb6d467a123`
+  - `Authorization: **********`
 - **Query Parameters:**
   - `accountId` (required): The ID of the ad account.
   - `start` (required): The start date in YYYY-MM-DD format.
@@ -66,10 +70,30 @@ This project provides a connector for fetching advertising data from the Sultek 
 - **Response:**
     ```json
     {
-        "columns": ["column1", "column2", ...],
+        "columns": [
+        "campaign_id",
+        "clicks",
+        "conversions",
+        "cost",
+        "date",
+        "impressions"
+    ],
         "rows": [
-            ["row1column1Value", "row1column2Value", ...],
-            ["row2column1Value", "row2column2Value", ...]
+        [
+            "2025",
+            21,
+            5,
+            34.47,
+            "2024-05-01",
+            501
+        ],
+        [
+            "2025",
+            31,
+            5,
+            48.01,
+            "2024-05-01",
+            448
         ]
     }
     ```
