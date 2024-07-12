@@ -110,5 +110,5 @@ curl -H "Authorization: Bearer bb6d467a123" http://127.0.0.1:5555/api/accounts
 ### Fetch Advertisement Data
 
 ```bash
-curl -H "Authorization: Bearer bb6d467a123" http://127.0.0.1:5555/api/adData?accountId=4d2b35432947&start=2024-05-01&end=2024-05-31
+curl -H "Authorization: Bearer bb6d467a123" "http://127.0.0.1:5555/api/adData?accountId=4d2b35432947&start=2024-05-01&end=2024-05-31"
 ```
