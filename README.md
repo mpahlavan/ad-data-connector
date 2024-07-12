@@ -77,23 +77,24 @@ This project provides a connector for fetching advertising data from the Sultek 
         "cost",
         "date",
         "impressions"
-    ],
+        ],
         "rows": [
-        [
+            [
             "2025",
             21,
             5,
             34.47,
             "2024-05-01",
             501
-        ],
-        [
+            ],
+            [
             "2025",
             31,
             5,
             48.01,
             "2024-05-01",
             448
+            ]
         ]
     }
     ```
