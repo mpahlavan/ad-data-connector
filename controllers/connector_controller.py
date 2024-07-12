@@ -1,8 +1,12 @@
 import requests
 from flask import jsonify
+from dotenv import load_dotenv
+import os
 
-BASE_URL = 'https://sultek.data-in-stage.funnel.io'
-TOKEN = 'bb6d467a123'
+load_dotenv()
+
+BASE_URL = os.getenv('BASE_URL')
+TOKEN = os.getenv('TOKEN')
 
 def get_account_info():
     headers = {'Authorization': TOKEN}
