@@ -4,6 +4,7 @@ This project provides a connector for fetching advertising data from the Sultek 
 
 ## Prerequisites 
 - Python 3.11.2
+- VSCode
 
 
 ## Installation
