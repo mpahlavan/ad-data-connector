@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 BASE_URL = os.getenv('BASE_URL')
-TOKEN = os.getenv('TOKEN')
+TOKEN = os.getenv('AUTH_TOKEN')
 
 def get_account_info():
     headers = {'Authorization': TOKEN}
