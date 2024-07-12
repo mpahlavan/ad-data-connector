@@ -79,4 +79,5 @@ This project provides a connector for fetching advertising data from the Sultek 
 ### Fetch Account Information
 
 ```bash
-curl -H "Authorization: bb6d467a123" http://127.0.0.1:5555/api/accounts
+curl -H "Authorization: Bearer bb6d467a123" http://127.0.0.1:5555/api/accounts
+```
