@@ -57,7 +57,7 @@ class CallAPI:
         """
         Initializes the CallAPI class with environment variables.
         """
-        self.BASE_URL = os.getenv('BASE_URL') + '/demo/'
+        self.BASE_URL = (os.getenv('BASE_URL') or '').rstrip('/') + '/demo/'
         self.auth_token = os.getenv('AUTH_TOKEN')
         self.headers = {'Authorization': f'Bearer {self.auth_token}'}
     
